@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <title>Brand</title>
+</head>
+<body>
+<!-- Aqui inicia el navbar -->
+    <nav class="fadeInDown">
+        <div class="brand_image">
+            <img src="./imgs/logo.png" alt="Logo Brand">
+        </div>
+        <div class="nav_options">
+            <ul>
+                <li><a href="#">Faqs</a></li>
+                <li><a href="./producto.html">Producto y descripción</a></li>
+            </ul>
+        </div>
+    </nav>
+<!-- Aqui termina el navbar -->
+<!-- Aqui inicia formulario venta -->
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+            <div class="modulo_pago">
+                <div class="modulo_pago-img">
+                    <img src="./imgs/box2.png" alt="Gatitos en una caja">
+                </div>
+                <h3>Producto 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div class="col-8">
+            <div class="modulo_pago">
+                <form action="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=N7X4S83ZQCZUL" method="POST">
+                    <label for="name">Nombre</label>
+                    <br>
+                    <input type="text" placeholder="name" id="name" class="data" required oninvalid="this.setCustomValidity('Introduce tu nombre')">
+                    <br>
+                    <label for="mail">E-Mail</label>
+                    <br>
+                    <input type="text" placeholder="E-mail" id="mail" class="data" required>
+                    <br>
+                    <label for="tlf">Telefono</label>
+                    <br>
+                    <input type="tel" placeholder="phone" id="tel" class="data" required>
+                    <br>
+                    <input type="submit" class="main_button" name="submit" value="Confirmar Pedido">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Aqui termina formulario venta -->
+<!-- Inicio footer -->
+<footer>
+    <div class="option">Terminos y condiciones</div>
+    <div class="option">Contacto@algo.algo</div>
+</footer>
+<!-- Fin footer -->
+    <script src="./scripts/scrip.js"></script>
+</body>
+</html>
